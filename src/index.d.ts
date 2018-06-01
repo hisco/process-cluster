@@ -11,6 +11,7 @@ declare module ProcessCluster {
 		public forkToDetination():void;
 		public increaseBy(size : number):void;
 		public decreaseBy(size : number):void;
+		public setSize(size : number):void;
 		public stop():void;
 		public start():void;
 	}

@@ -26,6 +26,9 @@ class ProcessCluster extends EventEmitter{
             child.removeAllListeners()
         });
     }
+    getCurrentChildProcess(){
+        return this.children.map(foreverProcess => foreverProcess.process);
+    }
     createProcess(){
         const child = new ForeverChildProcess({
             fork : this.fork
@@ -77,6 +80,10 @@ class ProcessCluster extends EventEmitter{
     }
     decreaseBy(n){
         this.destination-=n;
+        this.forkToDetination();
+    }
+    setSize(n){
+        this.destination=n;
         this.forkToDetination();
     }
     stop(){

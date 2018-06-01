@@ -1,6 +1,6 @@
 {
   "name": "process-cluster",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cluster multiple child process forever",
   "main": "src/index.js",
   "types": "src/index.d.ts",
