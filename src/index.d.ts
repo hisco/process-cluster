@@ -16,3 +16,4 @@ declare module ProcessCluster {
 		public start():void;
 	}
 }
+export = ProcessCluster;
