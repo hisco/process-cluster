@@ -1,5 +1,7 @@
 # Process cluster
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hisco/process-cluster.svg)](https://greenkeeper.io/)
+
 `process-cluster` will asist you in creating any child process cluster, it uses
 `forever-process` to makes sure that cluster will run forever.
 
